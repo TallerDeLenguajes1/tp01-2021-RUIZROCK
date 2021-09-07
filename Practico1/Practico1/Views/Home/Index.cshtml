@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center"
+
+
+    <h1 class="display-4">Trabajo Practico 01 - Taller de Lenguajes II</h1>
+
+
+    <p>Problema 1</p>
+    <form asp-action="Problema1" asp-controller="home" method="post">
+        <label>Ingrese el valor - Cuadrado de un numero</label>
+        <br />
+        <input type="text" name="a" value="" />
+        <label> al cuadrado</label>
+        <input type="submit" class="btn btn-primary" />
+    </form>
+    <br />
+    <br />
+    <br />
+
+
+
+    <p>Problema 2</p>
+    <form asp-action="Problema2" asp-controller="home" method="post">
+        <label>Ingrese valores - Division entre dos numeros</label>
+        <br />
+        <input type="text" name="a" value="" />
+        <label>/</label>
+        <input type="text" name="b" value="" />
+        <input type="submit" class="btn btn-primary" />
+    </form>
+    <br />
+    <br />
+    <br />
+
+
+
+    <p>Problema 3</p>
+        <form asp-action="ConsumirAPI" method="post">
+            <label>Click aqui para ver el listado de provincias y su id</label>
+            <input type="submit" name="boton" value="Ver" />
+        </form>
+    <br />
+    <br />
+    <br />
+
+
+    <p>Problema 4</p>
+    <form asp-action="Problema4" method="post">
+        <label>Cantidad de km</label>
+        <input type="text" name="num1" />
+        <label>Cantidad de litros</label>
+        <input type="text" name="num2" />
+        <input type="submit" name="boton" value="Enviar" />
+    </form>
